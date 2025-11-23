@@ -1,0 +1,83 @@
+/* Importamos la fuente que pusimos en index.html */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Fondo general muy suave */
+.bg-light-gray {
+  background-color: #f0f2f5;
+}
+
+
+
+/* AZUL. */
+.bg-custom-blue {
+  
+  background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+}
+
+/* NARANJA. */
+.btn-custom-orange {
+  background-color: #fd7e14; /* Naranja vibrante */
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-custom-orange:hover:not(:disabled) {
+  background-color: #e36802; 
+  transform: translateY(-1px); 
+  box-shadow: 0 4px 8px rgba(253, 126, 20, 0.3);
+}
+
+.btn-custom-orange:disabled {
+  background-color: #e9ecef;
+  color: #adb5bd !important;
+}
+
+/* --- ANIMACIONES --- */
+
+/* Animación de entrada suave para las tareas */
+.item-animado {
+  animation: slideIn 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Ajuste visual para el input */
+.form-control:focus {
+  box-shadow: none;
+  background-color: #f8f9fa;
+}
+
+/* El input group redondeado */
+.input-group {
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+
+/* Cuando escribes, el borde se pone azul suave */
+.input-group:focus-within {
+  border-color: #0d6efd;
+}
+
+
+.card-custom-width {
+  max-width: 500px;
+  width: 100%;
+}
+
+
+.vertical-marker {
+  width: 4px;
+  height: 20px;
+  border-radius: 2px;
+}
