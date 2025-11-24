@@ -12,7 +12,7 @@ import { FormsModule } from '@angular/forms';
 })
 export class App {
   // Tareas iniciales
-  todoArray: string[] = ['Dominar Angular 20', 'Practicar TypeScript', 'Hacer ejercicio'];
+  todoArray: string[] = ['Comer', 'Pasar el semestre', 'Hacer ejercicio'];
 
   newTodo: string = '';
   errorMsg: string = '';
